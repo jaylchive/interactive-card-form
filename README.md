@@ -31,7 +31,7 @@ Users should be able to:
 
 ![](./screenshot.png)
 
-Live Site URL: [https://interactive-card-form-jayl.com](https://interactive-card-form-jayl.com)
+Live Site URL: [https://interactive-card-form-jayl.vercel.app/](https://interactive-card-form-jayl.vercel.app/)
 
 ## My process
 
@@ -50,5 +50,5 @@ But the main part, which is validating the form inputs, was quite fun to achieve
 
 ## Links
 
-- Live Site URL: [https://interactive-card-form-jayl.com](https://interactive-card-form-jayl.com)
+- Live Site URL: [https://interactive-card-form-jayl.vercel.app/](https://interactive-card-form-jayl.vercel.app/)
 - Frontend Mentor - [@jaylchive](https://www.frontendmentor.io/profile/jaylchive)
