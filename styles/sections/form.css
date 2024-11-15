@@ -1,0 +1,71 @@
+#form {
+  width: 380px;
+}
+
+.input-row,
+.input-row--small {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-row:has(.input-row--small) {
+  display: grid;
+  grid-template-columns: minmax(0, 17fr) minmax(0, 19fr);
+  gap: 20px;
+}
+
+.expire > div {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 10px;
+}
+
+.input-row:not(:last-child) {
+  margin-bottom: 26px;
+}
+
+.input-wrapper {
+  width: 100%;
+  border: 1px solid var(--color-violet-200);
+  border-radius: 8px;
+}
+
+.input-row input {
+  width: calc(100% - 16px * 2);
+  height: 45px;
+  margin: 0 16px;
+  display: block;
+}
+
+.error .input-wrapper {
+  border: 1px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(180deg, var(--color-primary-red) 0%, var(--color-primary-red) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.input-wrapper:focus-within {
+  border: 1px solid transparent;
+  background-image: linear-gradient(#fff, #fff),
+    linear-gradient(180deg, var(--color-gradient-light) 0%, var(--color-gradient-dark) 100%);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+}
+
+.input-row input::placeholder {
+  color: var(--color-violet-900);
+  opacity: 0.25;
+}
+
+.input-row label {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.error-msg {
+  color: var(--color-primary-red);
+  font-size: 12px;
+}

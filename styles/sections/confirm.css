@@ -1,0 +1,34 @@
+.section--3 {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-content {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirm-content > div {
+  margin-top: 35px;
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.confirm-title {
+  margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 3.42px;
+  text-transform: uppercase;
+}
+
+.confirm-description {
+  color: var(--color-violet-400);
+  font-size: 18px;
+  font-weight: 500;
+}

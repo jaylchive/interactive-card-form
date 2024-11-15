@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles/app.css" />
+    <link rel="stylesheet" href="./styles/sections/card.css" />
+    <link rel="stylesheet" href="./styles/sections/form.css" />
+    <link rel="stylesheet" href="./styles/sections/confirm.css" />
+    <title>Frontend Mentor | Interactive card details form</title>
+    <script defer src="./script/card-input.js"></script>
+    <script defer src="./script/form.js"></script>
+    <script defer src="./script/confirm.js"></script>
+  </head>
+  <body>
+    <div id="root">
+      <section class="section--1">
+        <div class="img-wrapper">
+          <div class="img-front">
+            <div class="img-info">
+              <div class="img-info-row--1">
+                <div class="circle-full"></div>
+                <div class="circle-linear"></div>
+              </div>
+              <div class="img-info-row--2">
+                <div>0000 0000 0000 0000</div>
+                <div>
+                  <span>Jane Appleseed</span>
+                  <span>00/00</span>
+                </div>
+              </div>
+            </div>
+            <img class="card-front" src="./images//bg-card-front.png" alt="Frontside of a credit card" />
+          </div>
+          <img class="card-back" src="./images/bg-card-back.png" alt="Back of a credit card" />
+        </div>
+      </section>
+      <section class="section--2">
+        <form id="form">
+          <div class="input-row">
+            <label for="name">Cardholder Name</label>
+            <div class="input-wrapper">
+              <input type="text" id="name" name="name" placeholder="e.g. Jane Appleseed" />
+            </div>
+          </div>
+          <div class="input-row">
+            <label for="card-number">Card Number</label>
+            <div class="input-wrapper">
+              <input type="text" id="cardNumber" name="cardNumber" placeholder="e.g. 1234 5678 9123 0000" />
+            </div>
+          </div>
+          <div class="input-row">
+            <div class="input-row--small expire">
+              <label for="expire">Exp. Date (MM/YY)</label>
+              <div>
+                <div class="input-wrapper">
+                  <input type="text" id="expire" name="expire" placeholder="DD" />
+                </div>
+                <div class="input-wrapper">
+                  <input type="text" id="expire-2" name="expire" placeholder="YY" />
+                </div>
+              </div>
+            </div>
+            <div class="input-row--small">
+              <label for="cvc">CVC</label>
+              <div class="input-wrapper">
+                <input type="text" name="cvc" id="cvc" name="cvc" placeholder="e.g. 123" />
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="confirm-btn btn">Confirm</button>
+        </form>
+      </section>
+      <section class="section--3 hidden">
+        <div class="confirm-content">
+          <img src="./images/icon-complete.svg" alt="check mark" />
+          <div>
+            <h3 class="confirm-title">Thank you!</h3>
+            <p class="confirm-description">We've added your card details</p>
+          </div>
+          <button class="continue-btn btn">Continue</button>
+        </div>
+      </section>
+      <div class="bg"></div>
+    </div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="https://github.com/jaylchive/interactive-card-form" target="_blank">Jay L</a>.
+    </div>
+  </body>
+</html>
